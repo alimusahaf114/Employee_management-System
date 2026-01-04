@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .salah{
+            width: 160px;
+            height: 200px;
+            background-color: peru;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 80px;
+            border-bottom-left-radius: 80px;
+            /* justify-content: center; */
+            align-items: center;
+            display: flex;
+            padding: 20px;
+            flex-direction: column;
+        }
+        .display{
+            width: 150px;
+            height: 80px;
+            background-color: white;
+            font-size: 15px;
+            text-align: center;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .btns{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 10px;
+            gap: 10px;
+        }
+        button{
+            padding: 18px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            background-color: springgreen;
+            font-weight: bold;
+        }
+        button:active{
+            background-color: rgb(8, 195, 101);
+        }
+    </style>
+</head>
+<body>
+    <div class="salah">
+        <div class="display"></div>
+        <div class="btns">
+            <button onclick="                
+                count++
+                document.querySelector('.display').textContent = count
+                ">1+</button>
+            <button onclick="                
+                count--
+                document.querySelector('.display').textContent = count
+                ">1-</button>
+            <button onclick="                
+                
+                document.querySelector('.display').textContent = 0
+                ">Reset</button>
+        </div>
+    </div>
+    <script>
+                     
+        let count = 0 ;   
+        
+        
+    </script>
+</body>
+</html>
